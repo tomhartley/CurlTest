@@ -14,9 +14,11 @@
 		E2EB56C51226D3CF00601495 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EB56C41226D3CF00601495 /* main.m */; };
 		E2EB56C81226D3CF00601495 /* CurlTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EB56C71226D3CF00601495 /* CurlTestAppDelegate.m */; };
 		E2EB56CB1226D3CF00601495 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2EB56C91226D3CF00601495 /* MainWindow_iPhone.xib */; };
-		E2EB56CE1226D3CF00601495 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2EB56CC1226D3CF00601495 /* MainWindow_iPad.xib */; };
 		E2EB56D11226D3CF00601495 /* CurlTestAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EB56D01226D3CF00601495 /* CurlTestAppDelegate_iPhone.m */; };
-		E2EB56D41226D3D000601495 /* CurlTestAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EB56D31226D3D000601495 /* CurlTestAppDelegate_iPad.m */; };
+		E2EB56DE1226D56100601495 /* view1.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EB56DC1226D56100601495 /* view1.m */; };
+		E2EB56DF1226D56100601495 /* view1.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2EB56DD1226D56100601495 /* view1.xib */; };
+		E2EB56E31226D5E600601495 /* view2.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EB56E11226D5E600601495 /* view2.m */; };
+		E2EB56E41226D5E600601495 /* view2.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2EB56E21226D5E600601495 /* view2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +33,14 @@
 		E2EB56C61226D3CF00601495 /* CurlTestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurlTestAppDelegate.h; sourceTree = "<group>"; };
 		E2EB56C71226D3CF00601495 /* CurlTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurlTestAppDelegate.m; sourceTree = "<group>"; };
 		E2EB56CA1226D3CF00601495 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		E2EB56CD1226D3CF00601495 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
 		E2EB56CF1226D3CF00601495 /* CurlTestAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurlTestAppDelegate_iPhone.h; sourceTree = "<group>"; };
 		E2EB56D01226D3CF00601495 /* CurlTestAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurlTestAppDelegate_iPhone.m; sourceTree = "<group>"; };
-		E2EB56D21226D3CF00601495 /* CurlTestAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurlTestAppDelegate_iPad.h; sourceTree = "<group>"; };
-		E2EB56D31226D3D000601495 /* CurlTestAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurlTestAppDelegate_iPad.m; sourceTree = "<group>"; };
+		E2EB56DB1226D56100601495 /* view1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = view1.h; sourceTree = "<group>"; };
+		E2EB56DC1226D56100601495 /* view1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = view1.m; sourceTree = "<group>"; };
+		E2EB56DD1226D56100601495 /* view1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = view1.xib; sourceTree = "<group>"; };
+		E2EB56E01226D5E600601495 /* view2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = view2.h; sourceTree = "<group>"; };
+		E2EB56E11226D5E600601495 /* view2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = view2.m; sourceTree = "<group>"; };
+		E2EB56E21226D5E600601495 /* view2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = view2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +60,7 @@
 		E2EB56A51226D3CF00601495 = {
 			isa = PBXGroup;
 			children = (
-				E2EB56AC1226D3CF00601495 /* iPhone */,
-				E2EB56AD1226D3CF00601495 /* iPad */,
+				E2EB56AC1226D3CF00601495 /* code */,
 				E2EB56AE1226D3CF00601495 /* Classes */,
 				E2EB56AF1226D3CF00601495 /* Other Sources */,
 				E2EB56B01226D3CF00601495 /* Resources */,
@@ -65,24 +69,21 @@
 			);
 			sourceTree = "<group>";
 		};
-		E2EB56AC1226D3CF00601495 /* iPhone */ = {
+		E2EB56AC1226D3CF00601495 /* code */ = {
 			isa = PBXGroup;
 			children = (
 				E2EB56C91226D3CF00601495 /* MainWindow_iPhone.xib */,
 				E2EB56CF1226D3CF00601495 /* CurlTestAppDelegate_iPhone.h */,
 				E2EB56D01226D3CF00601495 /* CurlTestAppDelegate_iPhone.m */,
+				E2EB56DB1226D56100601495 /* view1.h */,
+				E2EB56DC1226D56100601495 /* view1.m */,
+				E2EB56DD1226D56100601495 /* view1.xib */,
+				E2EB56E01226D5E600601495 /* view2.h */,
+				E2EB56E11226D5E600601495 /* view2.m */,
+				E2EB56E21226D5E600601495 /* view2.xib */,
 			);
+			name = code;
 			path = iPhone;
-			sourceTree = "<group>";
-		};
-		E2EB56AD1226D3CF00601495 /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-				E2EB56CC1226D3CF00601495 /* MainWindow_iPad.xib */,
-				E2EB56D21226D3CF00601495 /* CurlTestAppDelegate_iPad.h */,
-				E2EB56D31226D3D000601495 /* CurlTestAppDelegate_iPad.m */,
-			);
-			path = iPad;
 			sourceTree = "<group>";
 		};
 		E2EB56AE1226D3CF00601495 /* Classes */ = {
@@ -179,7 +180,8 @@
 			files = (
 				E2EB56C31226D3CF00601495 /* InfoPlist.strings in Resources */,
 				E2EB56CB1226D3CF00601495 /* MainWindow_iPhone.xib in Resources */,
-				E2EB56CE1226D3CF00601495 /* MainWindow_iPad.xib in Resources */,
+				E2EB56DF1226D56100601495 /* view1.xib in Resources */,
+				E2EB56E41226D5E600601495 /* view2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +195,8 @@
 				E2EB56C51226D3CF00601495 /* main.m in Sources */,
 				E2EB56C81226D3CF00601495 /* CurlTestAppDelegate.m in Sources */,
 				E2EB56D11226D3CF00601495 /* CurlTestAppDelegate_iPhone.m in Sources */,
-				E2EB56D41226D3D000601495 /* CurlTestAppDelegate_iPad.m in Sources */,
+				E2EB56DE1226D56100601495 /* view1.m in Sources */,
+				E2EB56E31226D5E600601495 /* view2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,14 +217,6 @@
 				E2EB56CA1226D3CF00601495 /* en */,
 			);
 			name = MainWindow_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		E2EB56CC1226D3CF00601495 /* MainWindow_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E2EB56CD1226D3CF00601495 /* en */,
-			);
-			name = MainWindow_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

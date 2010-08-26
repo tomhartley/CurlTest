@@ -19,7 +19,9 @@
     // Override point for customization after application launch.
 	
     [window makeKeyAndVisible];
-	
+	viewController=[[view1 alloc] initWithNibName:@"view1" bundle:nil];
+	viewController.view.frame=CGRectMake(0, 0, 768, 1024);
+	[window addSubview:viewController.view];
 	return YES;
 }
 

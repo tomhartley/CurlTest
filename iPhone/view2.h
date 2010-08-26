@@ -1,5 +1,5 @@
 //
-//  CurlTestAppDelegate_iPhone.h
+//  view2.h
 //  CurlTest
 //
 //  Created by Tom Hartley on 26/08/2010.
@@ -7,13 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CurlTestAppDelegate.h"
 #import "view1.h"
 
-@interface CurlTestAppDelegate_iPhone : CurlTestAppDelegate {
-    view1 *viewController;
+@interface view2 : UIViewController {
+    
 }
 
-
+- (IBAction)goToViewController1:(id)sender forEvent:(UIEvent *)event;
 @end
-
