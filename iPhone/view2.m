@@ -14,7 +14,7 @@
 - (IBAction)goToViewController1:(id)sender forEvent:(UIEvent *)event {
 	UIView *superview =[self.view superview];
 	view1 *viewController = [[view1 alloc] initWithNibName:@"view1" bundle:nil];	
-	viewController.view.frame=CGRectMake(0, 0, 768, 1024);
+	viewController.view.frame=[UIScreen mainScreen].applicationFrame;
 	[UIView beginAnimations:nil context:nil];
 	//change to set the time
 	[UIView setAnimationDuration:1];

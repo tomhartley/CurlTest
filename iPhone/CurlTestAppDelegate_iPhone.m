@@ -20,7 +20,7 @@
 	
     [window makeKeyAndVisible];
 	viewController=[[view1 alloc] initWithNibName:@"view1" bundle:nil];
-	viewController.view.frame=CGRectMake(0, 0, 768, 1024);
+	viewController.view.frame=[UIScreen mainScreen].applicationFrame;
 	[window addSubview:viewController.view];
 	return YES;
 }
